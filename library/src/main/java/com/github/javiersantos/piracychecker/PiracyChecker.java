@@ -77,6 +77,9 @@ public class PiracyChecker {
                 public void dontAllow(PiracyCheckerError error) {
                     UtilsLibrary.showUnlicensedDialog(context, unlicensedDialogTitle, unlicensedDialogDescription).show();
                 }
+
+				@Override
+                public void applicationError(int errorCode){}
             });
     }
 
