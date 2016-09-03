@@ -12,4 +12,6 @@ public interface PiracyCheckerCallback {
 
     void dontAllow(PiracyCheckerError error);
 
+	void applicationError(int errorCode);
+
 }

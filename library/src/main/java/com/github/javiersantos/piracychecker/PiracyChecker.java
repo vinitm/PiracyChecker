@@ -102,7 +102,9 @@ public class PiracyChecker {
                     }
 
                     @Override
-                    public void applicationError(int errorCode) {}
+                    public void applicationError(int errorCode) {
+                    	verifyCallback.applicationError(errorCode);
+                    }
                 });
             } else {
                 verifyCallback.allow();
